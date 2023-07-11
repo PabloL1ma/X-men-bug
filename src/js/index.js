@@ -24,7 +24,7 @@ personagens.forEach(personagem => {
         }
 
         //passo 3 - verificar se já exista um personagem selecionado, se sim, devemos remover a seleção dele 
-        const personagemSelecionado = document.querySelector('.personagem-selecionado');
+        const personagemSelecionado = document.querySelector('.selecionado');
         removerSelecaodoPersonagem(personagemSelecionado, personagem);
 
         //OBJETIVO 2 - quando passar o mouse em cima do personagem na listagem, trocar a imagem, o nome e a descrição do personagem grande
@@ -48,7 +48,7 @@ function alteraDescricaodoPersonagem(personagem) {
 }
 
 function removerSelecaodoPersonagem(personagemSelecionado, personagem) {
-    personagemSelecionado.classList.remove('personagem-selecionado');
-    personagem.classList.add('personagem-selecionado');
+    personagemSelecionado.classList.remove('.selecionado');
+    personagem.classList.add('.selecionado');
 }
 
